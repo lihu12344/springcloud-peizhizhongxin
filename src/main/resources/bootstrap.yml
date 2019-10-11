@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hello-service2
+  profiles:
+    active: dev
+  cloud:
+    consul:
+      host: 192.168.57.120
+      port: 8501
+      config:
+        format: yaml
+        prefix: config
+        profile-separator: "::"
+        data-key: data
